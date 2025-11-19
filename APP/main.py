@@ -3,8 +3,6 @@ from APP.database import create_db_tables,create_engine,test_connection
 from APP.routers.recipe_router import router
 from APP.routers.category_router import router as category_router
 
-
-
 app=FastAPI()
 
 create_db_tables()

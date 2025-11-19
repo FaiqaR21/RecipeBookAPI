@@ -10,6 +10,5 @@ class Category(SQLModel, table=True):
         sa_relationship_kwargs={"cascade": "all, delete"}
     )
 
-# Forward reference update
 from APP.models.recipe import Recipes
 Category.update_forward_refs()
